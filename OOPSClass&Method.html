@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*------------- Prototype ------------*/
+        // class hello{
+        //     massage(){
+        //         console.log("Hello EveryOne");
+        //     }
+        //     sorry(){
+        //         console.log("Sorry EveryOne");
+        //     }
+        // }
+        // let a = new hello();
+        // a.massage();
+        // a.sorry();
+
+    /*------------- Constructor ------------*/
+
+        class student{
+            // constructor(){
+                constructor(name, age){
+                // let name;
+                this.studentname = name;
+                this.studentage = age;
+                console.log("Constructor Function");
+            }
+            hello(){
+                console.log("Hello "+ this.studentname+" your age is "+ this.studentage)
+            }
+        }
+        // let a = new student();
+        // a.name = "Laxmi Gupta";
+        let a = new student("Laxmi Gupta",25);
+        let b = new student("Ram Gupta",25);
+        a.hello();
+        b.hello(); 
+
+        /*------------- Static ------------*/
+        class staticclass{
+            static staticMethod(){
+                console.log("Static Method");
+            }
+        }
+
+        staticclass.staticMethod();
+    </script>
+</body>
+</html>
